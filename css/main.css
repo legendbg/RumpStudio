@@ -915,6 +915,194 @@ a {
   color: aqua;
 }
 
+.services {
+  padding: 50px 0px;
+}
+.services__title {
+  margin-bottom: 81px;
+}
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 27px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+}
+.title__line {
+  width: 46px;
+  height: 4px;
+  background-color: #171717;
+}
+.title__text {
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+  color: #171717;
+}
+
+.active-item {
+  max-width: 452px !important;
+}
+
+.active-item .item-service__title {
+  text-decoration: underline;
+}
+
+.active-item .item-service__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.active-item .item-service__arrow {
+  display: block;
+}
+
+.active-item .item-service-white::before {
+  background: url("../images/services/decor-black.png") 0 0 no-repeat !important;
+}
+.active-item .item-service-white::after {
+  background: url("../images/services/decor-black.png") 0 0 no-repeat !important;
+}
+
+.item-service {
+  max-width: 271px;
+  position: relative;
+  padding: 35px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #171717;
+  width: 100%;
+  cursor: pointer;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.item-service::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  left: 0;
+  background: url("../images/services/decor-white-small.png") 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.item-service::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  left: 0;
+  background: url("../images/services/decor-white-small.png") 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.item-service__icon {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
+  width: 40px;
+  text-align: center;
+}
+.item-service__icon img {
+  width: 21px;
+  height: 21px;
+}
+.item-service__title {
+  font-weight: 400;
+  font-size: 48px;
+  color: #f4f4f4;
+  margin-bottom: 15px;
+}
+.item-service__text {
+  font-weight: 300;
+  font-size: 20px;
+  color: #f4f4f4;
+  margin-bottom: 40px;
+}
+.item-service__button {
+  width: 100%;
+  text-align: center;
+  padding: 17px 25px;
+  background-color: #fff;
+}
+.item-service__button-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #171717;
+}
+.item-service__arrow {
+  display: none;
+}
+
+.active-item.item-service::before {
+  background: url("../images/services/decor-white.png") 0 0 no-repeat !important;
+}
+.active-item.item-service::after {
+  background: url("../images/services/decor-white.png") 0 0 no-repeat !important;
+}
+
+.item-service-white {
+  -webkit-box-shadow: 0 8px 4px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 8px 4px 2px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+.item-service-white .item-service__title {
+  color: #171717;
+}
+
+.item-service-white .item-service__icon {
+  border-color: #171717;
+}
+
+.item-service-white .item-service__text {
+  color: #171717;
+}
+
+.item-service-white .item-service__button {
+  background-color: #171717;
+}
+
+.item-service-white .item-service__button-text {
+  color: #fff;
+}
+
+.item-service-white::before {
+  background: url("../images/services/decor-black-small.png") 0 0 no-repeat;
+}
+.item-service-white::after {
+  background: url("../images/services/decor-black-small.png") 0 0 no-repeat;
 @-webkit-keyframes slide {
   0% {
     top: -250px;
