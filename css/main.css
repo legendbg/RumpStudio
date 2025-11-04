@@ -962,9 +962,9 @@ a {
 }
 .portfolio__scene {
   position: absolute;
-  top: -250px;
-  right: -150px;
   z-index: -100;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
   -webkit-animation: slide 2s ease-in-out 0.5s 3 normal;
           animation: slide 2s ease-in-out 0.5s 3 normal;
 }
@@ -1010,6 +1010,26 @@ a {
     right: 540px;
   }
 }
+.scene-active1 {
+  top: -250px;
+  right: -150px;
+}
+
+.scene-active2 {
+  top: 200px;
+  right: 540px;
+}
+
+.scene-active3 {
+  top: 610px;
+  right: -150px;
+}
+
+.scene-active4 {
+  top: 1030px;
+  right: 540px;
+}
+
 .services {
   padding: 50px 0px;
 }
