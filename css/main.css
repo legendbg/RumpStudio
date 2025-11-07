@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Kalnia:100,200,300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Kay+Pho+Du:regular,500,600,700);
-
 * {
   margin: 0;
   padding: 0;
@@ -757,7 +756,7 @@ a {
   margin-bottom: 20px;
 }
 .footer__timeline-container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer__timeline-text {
   font-weight: 400;
@@ -777,10 +776,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 17px;
+  gap: 5px;
 }
 .footer__social {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.footer__social:hover svg {
+  width: 30px;
+  height: 30px;
+}
+.footer__social svg {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  width: 26px;
+  height: 26px;
 }
 .footer__nav-title {
   font-weight: 400;
@@ -889,6 +900,12 @@ a {
 .footer__contact-icon {
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
+  width: 25px;
+  height: 25px;
+}
+.footer__contact-icon svg {
+  width: 25px;
+  height: 25px;
 }
 .footer__lower-container {
   padding: 15px 0px 15px;
