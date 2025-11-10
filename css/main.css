@@ -1054,7 +1054,7 @@ a {
   height: 25px;
 }
 .footer__lower-container {
-  padding: 15px 0px 15px;
+  padding: 15px;
 }
 .footer__lower-content {
   display: -webkit-box;
@@ -1099,6 +1099,82 @@ a {
   color: #7c7c7c;
 }
 
+/* ============================================================================== */
+@media (max-width: 1250px) {
+  .footer__nav {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer__columns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__directions-title {
+    text-align: left;
+  }
+  .footer__contact-title {
+    text-align: left;
+  }
+  .footer__contact {
+    margin-bottom: 10px;
+  }
+  .footer__lower-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer__addition {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacts {
+    display: none;
+  }
+}
+@media (max-width: 528px) {
+  .footer__directions-title {
+    text-align: center;
+  }
+  .footer__direction-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contact-title {
+    text-align: center;
+  }
+  .footer__contact-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__right-reserved {
+    font-size: 13px;
+  }
+  .footer__politics {
+    font-size: 13px;
+  }
+  .footer__upper-content {
+    padding: 24px 0px 24px;
+  }
+  .footer__contacts {
+    display: none;
+  }
+}
 .portfolio {
   padding: 100px 0px;
 }
