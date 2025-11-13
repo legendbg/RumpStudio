@@ -7,22 +7,13 @@
         border-bottom: 1px solid black;
     }
 
-    &__container {
-    }
-
     &__columns {
         display: flex;
         justify-content: space-between;
     }
 
-    &__main {
-    }
-
     &__logo {
         margin-bottom: 15px;
-    }
-
-    &__timeline {
     }
 
     &__timeline-title {
@@ -63,20 +54,17 @@
         height: 30px;
 
         &:hover {
-          svg {
-            width: 30px;
-            height: 30px;
-          }
+            svg {
+                width: 30px;
+                height: 30px;
+            }
         }
-        
-        svg {
-          transition: all .2s linear;
-          width: 26px;
-          height: 26px;
-        }
-    }
 
-    &__nav {
+        svg {
+            transition: all 0.2s linear;
+            width: 26px;
+            height: 26px;
+        }
     }
 
     &__nav-title {
@@ -85,9 +73,6 @@
         line-height: 187%;
         color: #515151;
         margin-bottom: 18px;
-    }
-
-    &__nav-list {
     }
 
     &__nav-item {
@@ -119,9 +104,6 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 214%;
-    }
-
-    &__directions {
     }
 
     &__directions-title {
@@ -160,9 +142,6 @@
         }
     }
 
-    &__contacts {
-    }
-
     &__contact {
         margin-bottom: 20px;
     }
@@ -199,16 +178,13 @@
         height: 25px;
 
         svg {
-          width: 25px;
-          height: 25px;
+            width: 25px;
+            height: 25px;
         }
     }
 
-    &__contact-text {
-    }
-
     &__lower-container {
-        padding: 15px 0px 15px;
+        padding: 15px;
     }
 
     &__lower-content {
@@ -248,6 +224,94 @@
 
         &:hover {
             color: #7c7c7c;
+        }
+    }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .footer {
+        padding-top: 50px;
+
+        &__nav {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__columns {
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        &__directions-title {
+            text-align: left;
+        }
+
+        &__contact-title {
+            text-align: left;
+        }
+
+        &__contact {
+            margin-bottom: 10px;
+        }
+
+        &__lower-content {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__copyright {
+            text-align: center;
+        }
+
+        &__addition {
+            justify-content: center;
+        }
+
+        &__contacts {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .footer {
+        &__directions-title {
+            text-align: center;
+        }
+
+        &__direction-list {
+            justify-content: center;
+        }
+
+        &__contact-title {
+            text-align: center;
+        }
+
+        &__contact-body {
+            justify-content: center;
+        }
+
+        &__right-reserved {
+            font-size: 13px;
+        }
+
+        &__politics {
+            font-size: 13px;
+        }
+
+        &__upper-content {
+            padding: 24px 0px 24px;
+        }
+
+        &__contacts {
+            display: none;
         }
     }
 }
